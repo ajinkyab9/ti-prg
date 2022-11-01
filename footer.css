@@ -1,0 +1,146 @@
+/* ? Below code is for map and address section including footer*/
+
+footer {
+  margin-top: auto;
+  width: 100vw;
+  max-height: 100%;
+  background-color: #1e1e1e;
+  color: #e8a34d;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.map-and-address {
+  margin: 0 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.contact-footer-info {
+  width: 100%;
+}
+
+.home-map-container {
+  margin-top: 5rem;
+}
+
+.footer-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 5rem;
+}
+
+.vertical-separator {
+  border-left: #e8a34d 5px solid;
+  height: 10rem;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65rem;
+  margin: 5rem 10rem;
+  font-size: 2rem;
+}
+
+.footer-navigation ul {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* ? Above section is for map and address section including footer*/
+
+@media only screen and (min-width: 220px) and (max-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+  }
+
+  .map-and-address {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    gap: 0;
+  }
+
+  .footer-text-container {
+    margin: 3rem;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 5rem;
+  }
+
+  .vertical-separator {
+    border-bottom: #e8a34d 5px solid;
+    height: 0;
+    width: 20rem;
+  } 
+
+  .home-map-container {
+    margin: 5rem;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .footer-navigation {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 3rem;
+    margin: 2rem;
+  }
+  
+  .footer-navigation ul {
+    gap: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1595px) {
+  .footer-navigation {
+    gap: 20rem; 
+    margin: 5rem;
+  }
+
+  /* ! The code commented below is the experimental code and
+   ! can be deleted if not needed*/
+  /* .footer-text-container {
+    margin: 3rem;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 5rem;
+  }
+
+  .vertical-separator {
+    border-bottom: #e8a34d 5px solid;
+    height: 0;
+    width: 20rem;
+  }  */
+
+  /* ! The code above is the experimental code and
+    ! can be deleted if not needed */
+
+    .map-and-address {
+      gap: 20rem;
+    }
+
+    .footer-text-container {
+      font-size: 2rem;
+      gap: 2rem;
+    }
+}

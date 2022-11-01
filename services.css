@@ -1,0 +1,352 @@
+/* 
+  ! Means experimental feature
+  * Above and below line to explain the code within does a certain feature
+  ? Specific section
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  .service-banner {
+    margin: 20rem 5rem 5rem 5rem;
+    gap: 10rem;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-container {
+    margin-top: 10rem;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bnr-img {
+    height: 50rem;
+    width: 50rem;
+  }
+
+  .bnr-text-container {
+    width: 100vh;
+  }
+
+  .bnr-text-heading {
+    margin-bottom: 2rem;
+    width: 75%;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+  }
+
+  .bnr-text {
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .service-heading {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    background-color: #1e1e1e;
+    width: 25%;
+    color: #e8a34d;
+  }
+
+  .service-elem {
+    gap: 10rem;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10rem 15rem;
+  }
+
+  .service-segment {
+    width: 100%;
+    height: 75vh;
+  }
+
+  .elem-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .elem-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .elem-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+  }
+
+  .elem-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    max-width: 75%;
+  }
+
+  .elem-img {
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 12rem;
+    height: 12rem;
+    background-color: #1e1e1e;
+  }
+
+  .elem-svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .services-cta {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    margin: 5rem 0;
+    background-color: #1e1e1e;
+    height: 50vh;
+    width: 75%;
+  }
+
+  .cta-title {
+    color: #e8a34d;
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+  }
+
+  .cta-info {
+    max-width: 75%;
+  }
+
+  .cta-para {
+    color: #e9e9e9;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .cta-para-text {
+    background-color: #e9e9e9;
+    padding: 2rem;
+    border-radius: 5rem;
+    text-align: center;
+    color: #1e1e1e;
+  }
+
+  .cta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 75%;
+  }
+
+  .btn-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  /* *CTA button section below*/
+
+.cta-action-btn,
+.cta-action-btn *,
+.cta-action-btn :after,
+.cta-action-btn :before,
+.cta-action-btn:after,
+.cta-action-btn:before {
+
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.cta-action-btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  color: #e8a34d;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 5rem;
+  padding: 2rem;
+}
+
+.cta-action-btn:hover {
+  color: #e9e9e9;
+}
+.cta-action-btn:disabled {
+  cursor: default;
+}
+.cta-action-btn:-moz-focusring {
+  outline: auto;
+}
+.cta-action-btn svg {
+  display: block;
+}
+.cta-action-btn [hidden] {
+  display: none;
+}
+.cta-action-btn {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.cta-action-btn span {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  mix-blend-mode: difference;
+}
+.cta-action-btn:before {
+  background: #e9e9e9;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.cta-action-btn:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+a {
+  all: unset;
+}
+/* *CTA button section above */
+
+/* *Responsive section */
+
+@media only screen and (min-width: 220px) and (max-width: 767px) {
+  .service-banner {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  
+  .banner-2 {
+    flex-direction: column-reverse;
+  }
+
+  .bnr-text-container {
+    max-width: 100%;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .bnr-text {
+    text-align: justify;
+  }
+
+  .bnr-text-heading {
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .banner-2 {
+    margin-top: 2rem;
+  }
+
+  .service-heading {
+    font-size: 3rem;
+    width: 75%;
+  }
+
+  .service-segment {
+    height: 100%;
+  }
+
+  .service-elem {
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    margin:  2rem;
+    gap: 5rem;
+  }
+
+  .elem-text {
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .cta-banner {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+
+  .cta-title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .cta-para {
+    text-align: justify;
+  }
+
+  .cta-para-text {
+    margin-bottom: 2rem;
+  }
+
+  .cta-info {
+    max-width: 100%;
+  }
+
+  .btn-text-col {
+    margin-top: 3rem;
+  }
+}
+
+/* *Responsive section */
+
+  

@@ -1,0 +1,546 @@
+/* 
+  ! Means experimental feature
+  * Above and below line to explain the code within does a certain feature
+  ? Specific section
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.about-container {
+  margin: 15rem 5rem 5rem 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  max-width: 100%;
+  font-size: 3rem;
+  gap: 7rem;
+  background-color: rgba(30, 30, 30, 1);
+}
+.about-container h2 {
+  font-size: 6.5rem;
+  color: #e8a34d;
+  font-family: "Raleway", sans-serif;
+}
+
+.about-para {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #e9e9e9;
+}
+
+/* *Below is the start of pie chart section*/
+
+.piechart-heading {
+  font-size: 3rem;
+  height: 100%;
+  max-width: 100%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: 0 10rem;
+}
+
+.piechart-main-body {
+  height: 65%;
+  max-width: 100%;
+  margin: 0rem 10rem 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.piechart-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+
+.pie-chart {
+  border: none;
+  background: radial-gradient(
+      circle closest-side,
+      #e9e9e9 0,
+      #e9e9e9 41.58%,
+      transparent 41.58%,
+      transparent 66%,
+      #e9e9e9 0
+    ),
+    conic-gradient(
+      #403e3b 0,
+      #403e3b 38%,
+      #8c8881 0,
+      #8c8881 61%,
+      #bb8a3e 0,
+      #bb8a3e 77%,
+      #fff 0,
+      #fff 100%
+    );
+  position: relative;
+  width: 50rem;
+  min-height: 35rem;
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.pie-chart h2 {
+  position: absolute;
+  margin-bottom: 2rem;
+}
+
+.pie-chart figcaption {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: smaller;
+  text-align: right;
+}
+.pie-chart span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
+}
+
+
+
+.pie-bullet-container {
+  visibility: hidden;
+}
+
+
+/* *Above is the end of pie chart section*/
+
+/* *Below is the vision and mission section*/
+
+.vision-container,
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.vm-container {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0rem 10rem 5rem 10rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.v-heading,
+.m-heading {
+  text-align: center;
+  width: 90vw;
+  padding: 1.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  background-color: #1e1e1e;
+  color: #e8a34d;
+}
+
+.m-heading {
+  margin-top: 10rem;
+}
+
+.v-main,
+.h-main {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.v-img-content,
+.h-img-content {
+  height: 40rem;
+  width: 40rem;
+  background-color: #403e3b;
+}
+
+.v-img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.v-img-content img,
+.h-img-content img {
+  height: 25rem;
+  width: 25rem;
+}
+
+.h-img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.v-para,
+.h-para {
+  margin: 0 5rem;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* *Above is the vision and mission section*/
+
+/* *Below is the responsive content for website */
+
+@media only screen and (min-width: 220px) and (max-width: 767px) {
+  .about-container {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 3rem;
+    height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-h2 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .about-para{
+    font-size: 1.8rem;
+    padding: 0 2rem;
+    text-align: justify;
+  }
+  
+  .piechart-heading {
+    height: 100%;
+    max-width: 100%;
+    font-size: 2rem;
+    padding: 1.6rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .piechart-main-body {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+  .pie-chart-div {
+    height: 100%;
+    max-width: 100%;
+    background: transparent;
+  }
+
+  .pie-chart {
+    max-height: 50%;
+    max-width: 100%;
+  }
+
+  figcaption {
+    visibility: hidden; 
+  }
+
+  .pie-bullet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    gap: 2rem;
+    width: 100vw;
+    padding: 2rem 8rem;
+ 
+  }
+
+  .pie-bullets {
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+    height: 2.5rem;
+    width: 2.5rem;
+    gap: 2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 50%;
+  }
+
+  .bullet-1 {
+    background-color: #403e3b;
+  }
+
+  .bullet-2 {
+    background-color: #8c8881;
+  }
+
+  .bullet-3 {
+    background-color: #bb8a3e;
+  }
+
+  .bullet-4 {
+    background-color: #fff;
+  }
+
+  .piechart-text {
+    text-align: justify;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .bullet-text {
+    margin-left: 5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+  }
+
+  .vm-container {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vision-container,
+  .mission-container {
+    margin: 0;
+  }
+
+  .vision-container {
+    flex-direction: column;
+  }
+
+  .mission-container {
+    flex-direction: column-reverse;
+  }
+
+  
+  .v-heading,
+  .m-heading {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    font-size: 3.5rem;
+  }
+
+  .m-heading {
+    margin-top: 0;
+  }
+
+  .v-main,
+  .h-main {
+    
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .v-main,
+  .h-main {
+    margin: 0;
+  }
+
+  .v-main {
+    flex-direction: column;
+  }
+
+  .h-main {
+    flex-direction: column-reverse;
+  }
+
+  .v-img-content {
+    transform: rotate(90deg);
+    clip-path: none;
+  }
+
+  .v-img-content img {
+    padding: 2rem;
+    height: 75%;
+    max-width: 100%;
+    transform: rotate(270deg);
+  }
+
+  .v-para,
+  .h-para {
+    max-width: 100%;
+    margin: 2rem;
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  .h-img-content {
+    transform: rotate(-90deg);
+    clip-path: none;
+  }
+
+  .h-img-content img {
+    padding: 2rem;
+    max-width: 100%;
+    transform: rotate(-270deg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .about-container {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 3rem;
+    height: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .about-h2 h2 {
+    font-size: 5.5rem;
+    text-align: center;
+  }
+
+  .about-para{
+    font-size: 3.5rem;
+    padding: 0 2rem;
+    text-align: justify;
+  }
+  
+  .piechart-heading {
+    height: 100%;
+    max-width: 100%;
+    font-size: 3rem;
+    padding: 1.6rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .piechart-main-body {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+
+  .pie-chart-div {
+    height: 100%;
+    max-width: 100%;
+    background: transparent;
+  }
+
+  .pie-chart {
+    max-height: 50%;
+    max-width: 100%;
+  }
+
+  figcaption {
+    visibility: hidden; 
+  }
+
+  .pie-bullet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    gap: 2rem;
+    width: 100vw;
+    padding: 2rem 8rem;
+ 
+  }
+
+  .pie-bullets {
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+    height: 2.5rem;
+    width: 2.5rem;
+    gap: 2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 50%;
+  }
+
+  .bullet-1 {
+    background-color: #403e3b;
+  }
+
+  .bullet-2 {
+    background-color: #8c8881;
+  }
+
+  .bullet-3 {
+    background-color: #bb8a3e;
+  }
+
+  .bullet-4 {
+    background-color: #fff;
+  }
+
+  .piechart-text {
+    text-align: justify;
+    padding: 2rem;
+    font-size: 3rem;
+  }
+
+  .bullet-text {
+    margin-left: 5rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  
+  .about-container {
+    height: 100%;
+    gap: 5rem;
+  }
+  
+  .about-h2 h2 {
+    font-size: 5rem;
+  }
+
+  .about-para {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .piechart-heading {
+    margin: 5rem;
+  }
+
+  .piechart-main-body {
+    max-width: 100%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .pie-bullet-container {
+    display: none;
+  }
+}
+
+

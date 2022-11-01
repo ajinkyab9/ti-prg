@@ -1,0 +1,75 @@
+/* CSS HEX */
+--metallic-sunburst: #AD7E3Bff;
+--dark-goldenrod: #BA883Fff;
+--white: #FEFEFEff;
+--bone: #D0CEC1ff;
+--nickel: #787266ff;
+--davys-grey: #4C4D47ff;
+
+/* CSS HSL */
+--metallic-sunburst: hsla(35, 49%, 45%, 1);
+--dark-goldenrod: hsla(36, 49%, 49%, 1);
+--white: hsla(0, 0%, 100%, 1);
+--bone: hsla(52, 14%, 79%, 1);
+--nickel: hsla(40, 8%, 44%, 1);
+--davys-grey: hsla(70, 4%, 29%, 1);
+
+/* SCSS HEX */
+$metallic-sunburst: #AD7E3Bff;
+$dark-goldenrod: #BA883Fff;
+$white: #FEFEFEff;
+$bone: #D0CEC1ff;
+$nickel: #787266ff;
+$davys-grey: #4C4D47ff;
+
+/* SCSS HSL */
+$metallic-sunburst: hsla(35, 49%, 45%, 1);
+$dark-goldenrod: hsla(36, 49%, 49%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$bone: hsla(52, 14%, 79%, 1);
+$nickel: hsla(40, 8%, 44%, 1);
+$davys-grey: hsla(70, 4%, 29%, 1);
+
+/* SCSS RGB */
+$metallic-sunburst: rgba(173, 126, 59, 1);
+$dark-goldenrod: rgba(186, 136, 63, 1);
+$white: rgba(254, 254, 254, 1);
+$bone: rgba(208, 206, 193, 1);
+$nickel: rgba(120, 114, 102, 1);
+$davys-grey: rgba(76, 77, 71, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-right: linear-gradient(90deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-bottom: linear-gradient(180deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-left: linear-gradient(270deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-top-right: linear-gradient(45deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-bottom-right: linear-gradient(135deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-top-left: linear-gradient(225deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-bottom-left: linear-gradient(315deg, #AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+$gradient-radial: radial-gradient(#AD7E3Bff, #BA883Fff, #FEFEFEff, #D0CEC1ff, #787266ff, #4C4D47ff);
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.color-greyish { color: #D9D7CC; }
+.color-dark brown  { color: #8C602A; }
+.color-golden brown  { color: #BF863F; }
+.color-offwhite  { color: #F2F2F2; }
+.color-blakish grey  { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.color-theme_ti-logo-1-rgba { color: rgba(217, 215, 204, 1); }
+.color-theme_ti-logo-2-rgba { color: rgba(140, 96, 42, 1); }
+.color-theme_ti-logo-3-rgba { color: rgba(191, 134, 63, 1); }
+.color-theme_ti-logo-4-rgba { color: rgba(242, 242, 242, 1); }
+.color-theme_ti-logo-5-rgba { color: rgba(13, 13, 13, 1); }
+
+/* Color Theme Swatches in HSLA */
+.color-theme_ti-logo-1-hsla { color: hsla(50, 14, 82, 1); }
+.color-theme_ti-logo-2-hsla { color: hsla(33, 53, 35, 1); }
+.color-theme_ti-logo-3-hsla { color: hsla(33, 50, 49, 1); }
+.color-theme_ti-logo-4-hsla { color: hsla(0, 0, 94, 1); }
+.color-theme_ti-logo-5-hsla { color: hsla(0, 0, 5, 1); }

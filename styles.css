@@ -1,0 +1,686 @@
+/*
+  ! Means experimental feature
+  * Above and below line to explain the code within does a certain feature
+  ? Specific section
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.header-and-hero {
+  max-width: 100%;
+  background-image: url("images-and-logos/zyro-image.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  background-color: rgba(216, 216, 216, 0.8);
+  color: #000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hs-side {
+  background-color: transparent;
+}
+
+.hero-section-heading {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  letter-spacing: 10pt;
+  font-size: 6.5rem;
+  margin-right: 15rem;
+  text-align: center;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 1rem;
+  top: 30%;
+  position: absolute;
+  color: #1e1e1e;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #e8a34d;
+}
+
+.reveal-block {
+  position: absolute;
+}
+
+.reveal-block span {
+  opacity: 0;
+  animation: text-appear 0.0001s linear forwards;
+  animation-delay: 1s;
+}
+
+.reveal-block::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background: #e8a34d;
+  animation: block-reveal 1.5s cubic-bezier(0.2, 1, 0.2, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes block-reveal {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-appear {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.main-hero,
+.hero-text,
+.hero-cta-btn {
+  margin: 3rem;
+}
+
+.main-hero {
+  max-width: 100%;
+  margin-top: 20rem;
+  visibility: hidden;
+  animation: hero-appear linear 1.5s forwards;
+  animation-delay: 1s;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 0 20rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.dots-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dots {
+  height: 1rem;
+  width: 1rem;
+  background-color: #e8a34d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* * Below code controls the behaviour of the hero call to action buttons */
+
+.btn-contactus-link span,
+.btn-why-us-link span {
+  font-size: 2rem;
+}
+
+.btn-contactus-link,
+.btn-contactus-link *,
+.btn-contactus-link :after,
+.btn-contactus-link :before,
+.btn-contactus-link:after,
+.btn-contactus-link:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-contactus-link {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  color: #1e1e1e;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-contactus-link:hover {
+  color: #e8a34d;
+}
+
+.btn-contactus-link:disabled {
+  cursor: default;
+}
+.btn-contactus-link:-moz-focusring {
+  outline: auto;
+}
+.btn-contactus-link svg {
+  display: block;
+}
+.btn-contactus-link [hidden] {
+  display: none;
+}
+.btn-contactus-link {
+  --height: 80px;
+  background: none;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-contactus-link span {
+  margin-left: 2rem;
+  font-weight: 700;
+  mix-blend-mode: difference;
+}
+.btn-contactus-link:before {
+  background: #1e1e1e;
+  border-radius: 2rem;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.btn-contactus-link:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.btn-why-us-link,
+.btn-why-us-link *,
+.btn-why-us-link :after,
+.btn-why-us-link :before,
+.btn-why-us-link:after,
+.btn-why-us-link:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-why-us-link {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  color: #1e1e1e;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-why-us-link:hover {
+  color: #e8a34d;
+}
+.btn-why-us-link:disabled {
+  cursor: default;
+}
+.btn-why-us-link:-moz-focusring {
+  outline: auto;
+}
+.btn-why-us-link svg {
+  display: block;
+}
+.btn-why-us-link [hidden] {
+  display: none;
+}
+.btn-why-us-link {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-why-us-link span {
+  margin-left: 2rem;
+  font-weight: 700;
+  mix-blend-mode: difference;
+}
+.btn-why-us-link:before {
+  background: #1e1e1e;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.btn-why-us-link:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+/* *Above code controls the behaviour of the hero call to action buttons  */
+
+/* ? Below is the services section */
+
+.non-logo-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  margin: 7.5rem;
+  font-family: "Roboto", sans-serif;
+  color: #1e1e1e;
+}
+
+.serv-bnr-head {
+  padding: 2rem;
+  width: 40%;
+  background-color: #1e1e1e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#bnr-head-2 {
+  background-color: #1e1e1e;
+}
+
+#bnr-head-2 h3 {
+  color: #e8a34d;
+}
+
+.services-section {
+  /* * Below overflow property resolves the double scrollbar issue*/
+  overflow-y: hidden;
+  /* *Above overflow property resolves the double scrollbar issue */
+  height: 100%;
+}
+
+.services-banner-container {
+  background-image: url("images-and-logos/insidewrkshp.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-image {
+  height: 50rem;
+  width: 45rem;
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(77, 77, 77, 1);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(77, 77, 77, 1);
+  box-shadow: 0px 0px 14px 1px rgba(77, 77, 77, 1);
+}
+
+.services-banner-1,
+.services-banner-3 {
+  background-color: rgba(136, 136, 136, 0.8);
+  color: #ffffff;
+}
+
+.services-banner-2 {
+  background-color: rgb(256, 256, 256);
+}
+
+.services-banner-1,
+.services-banner-2,
+.services-banner-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  padding: 5rem;
+}
+
+.services-btn-info-p {
+  display: flex;
+  align-items: center;
+}
+
+.info-btn-container {
+  margin-left: 5rem;
+}
+
+/* * Below section controls the behaviour of services learnmore buttons */
+
+.services-learnmore-btn span {
+  font-size: 2.5rem;
+}
+
+.services-learnmore-btn,
+.services-learnmore-btn *,
+.services-learnmore-btn :after,
+.services-learnmore-btn :before,
+.services-learnmore-btn:after,
+.services-learnmore-btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.services-learnmore-btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.services-learnmore-btn2 {
+  color: #1e1e1e;
+}
+
+.services-learnmore-btn:hover {
+  color: #e8a34d;
+}
+
+.services-learnmore-btn:disabled {
+  cursor: default;
+}
+.services-learnmore-btn:-moz-focusring {
+  outline: auto;
+}
+.services-learnmore-btn svg {
+  display: block;
+}
+.services-learnmore-btn [hidden] {
+  display: none;
+}
+.services-learnmore-btn {
+  --height: 80px;
+  background: none;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.services-learnmore-btn span {
+  /* margin-left: 2rem; */
+  font-size: 2.5rem;
+  font-weight: 500;
+  mix-blend-mode: difference;
+}
+.services-learnmore-btn:before {
+  background: #1e1e1e;
+  border-radius: 2rem;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: -9%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.services-learnmore-btn:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+/* * Above section controls the behaviour of services learnmore buttons */
+
+/* ? Above is the services section */
+/* ? Below is the why us home page section*/
+
+.why-us-bnr {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.why-us-card1,
+.why-us-card2,
+.why-us-card3 {
+  cursor: pointer;
+  margin: 5rem;
+  height: 55rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.bnr-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(30, 30, 30, 0.8);
+  font-weight: 500;
+  transition: 0.3s all ease;
+}
+
+.bnr-text:hover {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #e8a34d;
+  font-weight: 500;
+}
+
+.why-us-card1,
+.why-us-card2,
+.why-us-card3 {
+  cursor: pointer;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.why-us-card1 {
+  background-image: url("images-and-logos/precise engineering .png");
+}
+
+.why-us-card2 {
+  background-image: url("images-and-logos/design-def-image.jpg");
+}
+
+.why-us-card3 {
+  background-image: url("images-and-logos/industrial-hall-g077cccebf_640 (1).jpg");
+}
+
+.why-us-card1:hover,
+.why-us-card2:hover,
+.why-us-card3:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-image: url("images-and-logos/ti-logo.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ? Above is the why us home page section */
+
+/* Responsive content */
+
+@media only screen and (min-width: 220px) and (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .reveal-block {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .main-hero {
+    margin: 0;
+  }
+
+  .hero-text,
+  .dots-separator {
+    display: none;
+  }
+
+  .btn-contactus-link span,
+  .btn-why-us-link span {
+    font-size: 2rem;
+  }
+
+  .btn-contactus-link {
+    line-height: normal;
+  }
+
+  .non-logo-h2 {
+    margin: 7.5rem 0rem;
+    text-align: center;
+  }
+
+  .services-image {
+    height: 100%;
+    width: 100%;
+    margin: 0 1.5rem;
+  }
+
+  .services-banner-1,
+  .services-banner-3 {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .services-banner-2 {
+    padding: 0;
+  }
+
+  #services-bnr-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .services-btn-info-p p {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    max-width: 100%;
+    padding: 2rem;
+    text-align: justify;
+  }
+
+  .serv-bnr-head {
+    margin-top: 5rem;
+    text-align: center;
+    width: 75%;
+  }
+
+  #serv-head-1 {
+    margin-top: 0;
+  }
+
+  .services-learnmore-btn {
+    margin-left: 10rem;
+  }
+
+  .services-learnmore-btn span {
+    font-size: 2.5rem;
+  }
+
+  .info-btn-container {
+    margin: 0;
+  }
+
+  .why-us-bnr {
+    flex-direction: column;
+  }
+
+  .why-us-cards {
+    margin: 2rem 0;
+  }
+
+  .services-btn-info-p {
+    display: flex;
+    flex-direction: column;
+  }
+}

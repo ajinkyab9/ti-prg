@@ -1,0 +1,211 @@
+
+
+/*
+  ! Means experimental feature
+  * Above and below line to explain the code within does a certain feature
+  ? Specific section
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  .prod-head {
+    background-color: #1e1e1e;
+    max-width: 100vw;
+    height: auto;
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  .heading-text {
+    color: #e8a34d;
+    font-weight: 700;
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .head-info {
+    margin: 2rem;
+    color: #e9e9e9;
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .products-sec {
+    margin: 15rem 10rem 10rem;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .product-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5rem;
+    margin: 5rem 10rem 2.5rem;
+    height: 100%;
+    max-width: 100%;
+    gap: 10rem;
+  }
+
+
+  .text-elem {
+    height: 100%;
+    width: 50%;
+  }
+
+  .left-elem {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .right-elem {
+    height: 50rem;
+    width: 50rem;
+  }
+
+  /* .prod-container {
+    margin: 15rem 10rem 10rem;
+    height: 100%;
+    max-width: 100%;
+  } */
+
+
+  .text-prod-info,
+  .text-prod-features {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .info-heading,
+  .feature-heading {
+    width: 100%;
+    padding: 1.6rem;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #1e1e1e;
+    color: #e8a34d;
+  }
+
+  #fh {
+    width: 50%;
+  }
+
+  .info-para,
+  .feature-para {
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  #fp,
+  #ip {
+    margin-left: 3rem;
+  }
+
+  .slider {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .slides {
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    width: 100%;
+    transition: 2s;
+  }
+
+  .slide img {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .navigation-manual {
+    position: absolute;
+    width: 50rem;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn { 
+    border: 2px solid #e8a34d;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s; 
+  }
+
+  .manual-btn:not(:last-child) {
+     margin-right: 20px;
+  }
+
+  .manual-btn:hover {
+    background-color: #1e1e1e;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #radio2:checked ~ .first {
+    margin-left: -100%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -200%;
+  }
+
+  #radio4:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #radio5:checked ~ .first {
+    margin-left: -100%;
+  }
+
+  #radio6:checked ~ .first {
+    margin-left: -200%;
+  }
+
+  
+
+ 
+
+
+
+
+
+
+
+
